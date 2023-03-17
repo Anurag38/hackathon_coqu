@@ -1,0 +1,27 @@
+.medical-question-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+  }
+  
+  .medical-question-text {
+    font-size: 18px;
+    margin-right: 10px;
+  }
+  
+  .ai-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  .ai-button:hover {
+    background-color: #3e8e41;
+  }
+  

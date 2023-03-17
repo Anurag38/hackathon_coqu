@@ -1,7 +1,10 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import React from 'react';
 import QuizApp from './question/QuizApp';
+import QuestionAnswer from './questionAnswer/questionAnswer'
+import Landing from './landing/landing'
 import NextResult from './question/NextResult';
+import MedicalAnswerPage from './questionAnswer/MedicalAnswerPage';
 // import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 // import Home from './components/Home';
@@ -10,8 +13,9 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route exact path="/" element={<QuizApp />}/>
-        <Route exact path="/final" element={<NextResult />}/>
+        <Route exact path="/" element={<Landing />}/>
+        <Route exact path="/home" element={<QuestionAnswer />}/>
+        <Route exact path="//medical-question" element={<MedicalAnswerPage />}/>
       </Routes>
     </Router>
   );
